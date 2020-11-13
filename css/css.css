@@ -1,0 +1,86 @@
+/*
+ Name: Tony Dam
+ Email: tony_dam@student.uml.edu
+ Affiliation: Junior Student at UMass Lowell in COMP.4610-201
+              91.61 GUI Programming I
+Date created: 10/26/20
+
+Sources from: W3Schools, Stackoverflow, Youtube,
+and https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
+
+Website was created for personal use. Creates a dynamic interactive
+table for users to generate a multiplication table of any length of 
+their choosing.
+Copyright (c) October 26th, 2020 Tony Dam. All rights reserved.
+May be freely copied or excerpted for educational purposes with credit to
+author.
+*/
+
+body {
+  /* code from here: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 30%;
+  background-color: white;
+}
+
+#inputs {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  background-color: white;
+}
+
+input {
+  text-align: center;
+}
+
+#Updates {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 20%;
+    background-color: #E04747;
+}
+
+#multiTable{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: black;
+  font-size: 15pt;
+}
+td{
+  border:5px coral;
+  text-align: center;
+  background-color: #B98FE8;
+}
+
+/*https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-child*/
+td:first-child{
+  background-color: #EAACA6;
+}
+
+/*the first row coloring*/
+tr:first-child > td{
+  background-color: #A6C0ED;
+}
+
+/*to make the left corner invisble*/
+tr:first-child > td:first-child {
+  opacity:0.0;
+}
+
+#errmsg
+{
+color: rgb(212, 35, 35);
+}
